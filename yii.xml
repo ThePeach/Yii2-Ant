@@ -16,7 +16,7 @@
     </target>
 
     <macrodef name="migrate"
-            description="Run migrations">
+              description="Run migrations">
         <attribute name="exec"/>
         <attribute name="action" default="up"/>
         <sequential>
@@ -26,7 +26,7 @@
                 <arg value="migrate/@{action}"/>
                 <arg value="all" />
                 <arg value="--interactive=0"/>
-                <arg value="--colors=0"/>
+                <arg value="--color=0"/>
             </exec>
         </sequential>
     </macrodef>
